@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,81 +8,55 @@
 </head>
 <body>
      <!-- Шапка -->
-    <header>
-      <p><a href="#">Device</a></p>
-      <div>
-        <input type="search">
-        <ul>
-          <li><a href="#">Войти</a></li> <!-- Трудно понять кнопка это или ссылка, выглядит как ссылка - поэтому не button-->
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+    <header class="page-header">
+      <section class="top-header">
+        <a href="#">Device</a>  
+      </section>
+      <section class="low-header">
+          <div>
+              <input type="search">
+              <a href="catalog.html">Каталог товаров</a>
+          </div>
+          <div>
+              <ul>
+                <li><a href="#">Войти</a></li> <!-- Трудно понять кнопка это или ссылка, выглядит как ссылка - поэтому не button-->
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+              </ul>
+              <ul> 
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+          </div>
+      </section>
     </header>
     <main>
         <h1>Каталог</h1>
         <h2>Моноподы для селфи</h2>
-        <section>
-            <ul>
-                <li><a href="#">
-                        <figure>
-                            <img src="" alt="товар">
-                            <figcaption>Любительская селфи-палка <span>500 руб.</span></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <figure>
-                            <img src="" alt="товар">
-                            <figcaption>Профессиональная селфи-палка  <span>1500 руб.</span></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <figure>
-                            <img src="" alt="товар">
-                            <figcaption>Непотопляемая селфи-палка <span>2500 руб.</span></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <figure>
-                            <img src="" alt="товар">
-                            <figcaption>Селфи-палка «Следуй за мной» <span>4900 руб.</span></figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-
             <aside>
                 <section>
                     <h3>Цвет</h3>
                     <ul>
                         <li>
                             <input type="checkbox">
-                            Черный
+                            <label>Черный</label>
                         </li>
                         <li>
                             <input type="checkbox">
-                            Белый
+                            <label>Белый</label>
                         </li>
                         <li>
                             <input type="checkbox">
-                            Синий
+                            <label>Синий</label>
                         </li>
                         <li>
                             <input type="checkbox">
-                            Красный
+                            <label>Красный</label>
                         </li>
                         <li>
                             <input type="checkbox">
-                            Розовый
+                            <label>Розовый</label>
                         </li>
                     </ul> 
                 </section>
@@ -91,46 +65,73 @@
                     <ul>
                         <li>
                             <input type="radio">
-                            Есть
+                            <label>Есть</label>
                         </li>
                         <li>
                             <input type="radio">
-                            Нет
+                            <label>Нет</label>
                         </li>
                     </ul> 
                 </section>
 
             </aside>
+        <section>
+            <ul>
+                <li>
+                        <article>
+                            <img src="" alt="товар">
+                            <a href="#">Любительская селфи-палка <span>500 руб.</span></a>
+                        </article>
+                </li>
+                <li>    <article>
+                            <img src="" alt="товар">
+                            <a href="#">Профессиональная селфи-палка  <span>1500 руб.</span></a>
+                        </article>
+                </li>
+                <li>    <article>
+                            <img src="" alt="товар">
+                            <a href="#">Непотопляемая селфи-палка <span>2500 руб.</span></a>
+                        </article>
+                </li>
+                <li>    <article>
+                            <img src="" alt="товар">
+                            <a href="#">Селфи-палка «Следуй за мной» <span>4900 руб.</span></a>
+                        </article>
+                </li>
+            </ul>
+
+
         </section>
 
     </main>
-    <!-- Подвал -->
-    <footer>
-            <div>
-              <p><a href="#">Device</a></p>
-              <p>г. Москва, ул. Строителей, 15</p>
-            </div>
-            <div>
-              <ul>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантии</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-              <ul>
-                <li><a href="#">иконка фейсбук</a></li>
-                <li><a href="#">иконка инстаграмм</a></li>
-                <li><a href="#">иконка твиттер</a></li>
-              </ul>
-            </div>
-            <div>
+     <!-- Подвал -->
+     <footer class="page-footer">
+            <section>
+              <a href="#">Device</a>
               <ul>
                 <li><a href="#">Войти</a></li>
                 <li><a href="#">Сравнить</a></li>
                 <li><a href="#">Корзина</a></li>
               </ul>
+            </section>
+            <section>
+              <p>г. Москва, ул. Строителей, 15</p>
+              <ul>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
+              </ul>
               <p>Тел.: +7 (495) 495-95-95</p>
-              <img src="" alt="логотип htmlacademy"> 
-            </div>
+            </section>
+            <section>
+              <img src="" alt="декоративная линия"> 
+              <ul>
+                <li><a href="#">иконка фейсбук</a></li>
+                <li><a href="#">иконка инстаграмм</a></li>
+                <li><a href="#">иконка твиттер</a></li>
+              </ul>
+              <a href="#"><img src="" alt="логотип htmlacademy"> </a>
+            </section>
           </footer>
 </body>
 </html>

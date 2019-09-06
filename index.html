@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,74 +8,82 @@
 </head>
 <body>
 
-  <!-- Шапка -->
-    <header>
-      <p><a href="#">Device</a></p>
-      <div>
-        <input type="search">
-        <ul>
-          <li><a href="#">Войти</a></li> <!-- Трудно понять кнопка это или ссылка, выглядит как ссылка - поэтому не button-->
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </div>
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+   <!-- Шапка -->
+   <header class="page-header">
+      <section class="top-header">
+        <a href="#">Device</a>  
+      </section>
+      <section class="low-header">
+          <div>
+              <input type="search">
+              <a href="catalog.html">Каталог товаров</a>
+          </div>
+          <div>
+              <ul>
+                <li><a href="#">Войти</a></li> <!-- Трудно понять кнопка это или ссылка, выглядит как ссылка - поэтому не button-->
+                <li><a href="#">Сравнить</a></li>
+                <li><a href="#">Корзина</a></li>
+              </ul>
+              <ul> 
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+          </div>
+      </section>
     </header>
 
   <!-- Основное содержания без блоков выделенных на скрине -->
     <main>
       <section>
-        <h2>О нас</h2>	
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
-          <li><a href="#">Деловые Линии</a></li>
-          <li><a href="#">Автотрейдинг</a></li>
-          <li><a href="#">ЖелДорЭкспедиция</a></li>
-        </ul>
-        <a href="#">Поподробнее о нас</a>
-      </section>
-      <section>
-        <h2>Контакты</h2>	
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <iframe></iframe>
-        <a href="#">Напишите нам</a>
+        <div>
+          <h2>О нас</h2>	
+          <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul>
+            <li><a href="#">Деловые Линии</a></li>
+            <li><a href="#">Автотрейдинг</a></li>
+            <li><a href="#">ЖелДорЭкспедиция</a></li>
+          </ul>
+          <a href="#">Поподробнее о нас</a>
+        </div>
+        <div>
+          <h2>Контакты</h2>	
+          <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <iframe></iframe>
+          <a href="#">Напишите нам</a>
+        </div>
       </section>
     </main>
 
     <!-- Подвал -->
-    <footer>
-      <div>
-        <p><a href="#">Device</a></p>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </div>
-      <div>
-        <ul>
-            <li><a href="catalog.html">Каталог товаров</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">иконка фейсбук</a></li>
-          <li><a href="#">иконка инстаграмм</a></li>
-          <li><a href="#">иконка твиттер</a></li>
-        </ul>
-      </div>
-      <div>
+    <footer class="page-footer">
+      <section>
+        <a href="#">Device</a>
         <ul>
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
+      </section>
+      <section>
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
-        <img src="" alt="логотип htmlacademy"> 
-      </div>
+      </section>
+      <section>
+        <img src="" alt="декоративная линия"> 
+        <ul>
+          <li><a href="#">иконка фейсбук</a></li>
+          <li><a href="#">иконка инстаграмм</a></li>
+          <li><a href="#">иконка твиттер</a></li>
+        </ul>
+        <a href="#"><img src="" alt="логотип htmlacademy"> </a>
+      </section>
     </footer>
 </body>
 </html>
