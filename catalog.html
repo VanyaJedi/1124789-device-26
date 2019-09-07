@@ -10,7 +10,7 @@
      <!-- Шапка -->
     <header class="page-header">
       <section class="top-header">
-        <a href="#">Device</a>  
+        <a href="#" class="logo logo-header">Device</a>  
       </section>
       <section class="low-header">
           <div>
@@ -34,80 +34,111 @@
     <main>
         <h1>Каталог</h1>
         <h2>Моноподы для селфи</h2>
-            <aside>
-                <section>
-                    <h3>Цвет</h3>
-                    <ul>
-                        <li>
-                            <input type="checkbox">
-                            <label>Черный</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Белый</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Синий</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Красный</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Розовый</label>
-                        </li>
-                    </ul> 
-                </section>
-                <section>
-                    <h3>Bluetooth</h3>
-                    <ul>
-                        <li>
-                            <input type="radio">
-                            <label>Есть</label>
-                        </li>
-                        <li>
-                            <input type="radio">
-                            <label>Нет</label>
-                        </li>
-                    </ul> 
-                </section>
+        <nav class="catalog-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+        </nav>
+        <aside class="filter">
+            <h3>Фильтр:</h3>
+            <section>
+                <h3>Стоимость</h3>
+                <input type="range">
+            </section>
+            <section>
+                <h3>Цвет</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        <label>Черный</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Белый</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Синий</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Красный</label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        <label>Розовый</label>
+                    </li>
+                </ul> 
+            </section>
+            <section>
+                <h3>Bluetooth</h3>
+                <ul>
+                    <li>
+                        <input type="radio">
+                        <label>Есть</label>
+                    </li>
+                    <li>
+                        <input type="radio">
+                        <label>Нет</label>
+                    </li>
+                </ul> 
+            </section>
 
-            </aside>
+        </aside>
         <section>
-            <ul>
+            <section>
+                <h3>Сортировка:</h3>
+                <ul>
+                    <li>
+                        <a href="#">По цене</a>
+                        <a href="#">По типу</a>
+                        <a href="#">По популярности</a>
+                    </li>
+                </ul>
+                <div class="sort-type">
+                    <button></button>
+                    <button></button>
+                </div>
+            </section>
+            <ul class="product-list">
                 <li>
-                        <article>
+                        <article class="product-item">
                             <img src="" alt="товар">
                             <a href="#">Любительская селфи-палка <span>500 руб.</span></a>
                         </article>
                 </li>
-                <li>    <article>
+                <li>    <article class="product-item">
                             <img src="" alt="товар">
                             <a href="#">Профессиональная селфи-палка  <span>1500 руб.</span></a>
                         </article>
                 </li>
-                <li>    <article>
+                <li>    <article class="product-item">
                             <img src="" alt="товар">
                             <a href="#">Непотопляемая селфи-палка <span>2500 руб.</span></a>
                         </article>
                 </li>
-                <li>    <article>
+                <li>    <article class="product-item">
                             <img src="" alt="товар">
                             <a href="#">Селфи-палка «Следуй за мной» <span>4900 руб.</span></a>
                         </article>
                 </li>
             </ul>
-
-
+        </section>
+        <section class="pagination">
+            <button>Назад</button>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <button>Вперед</button>
         </section>
 
     </main>
      <!-- Подвал -->
      <footer class="page-footer">
             <section>
-              <a href="#">Device</a>
+              <a href="#" class="logo logo-footer">Device</a>
               <ul>
                 <li><a href="#">Войти</a></li>
                 <li><a href="#">Сравнить</a></li>
