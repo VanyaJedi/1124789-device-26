@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Catalog</title>
 </head>
 <body>
@@ -65,7 +66,7 @@
      <!-- Шапка -->
     <header class="page-header">
         <section class="top-header">
-            <a href="#" class="logo logo-header">
+            <a href="index.html" class="logo logo-header">
                 <svg class="icon_logo"  title="Логотип" width="163px" height="35px">
                     <use xlink:href="#logo"/>
                 </svg>     
@@ -111,7 +112,7 @@
     </header>   
     
     <main>
-        <h1>Каталог</h1>
+        <h1 class="visually-hidden">Каталог</h1>
         <h2>Моноподы для селфи</h2>
         <ul class="catalog-nav">
             <li><a href="#">Главная</a></li>
@@ -138,48 +139,65 @@
         </section>
         <section>
             <aside class="filter">
-                <section>
-                    <h3>Стоимость</h3>
-                    <input type="range">
-                </section>
-                <section>
-                    <h3>Цвет</h3>
-                    <ul>
-                        <li> 
-                            <input type="checkbox">
-                            <label>Черный</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Белый</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Синий</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Красный</label>
-                        </li>
-                        <li>
-                            <input type="checkbox">
-                            <label>Розовый</label>
-                        </li>
-                    </ul> 
-                </section>
-                <section>
-                    <h3>Bluetooth</h3>
-                    <ul>
-                        <li>
-                            <input type="radio">
-                            <label>Есть</label>
-                        </li>
-                        <li>
-                            <input type="radio">
-                            <label>Нет</label>
-                        </li>
-                    </ul> 
-                </section>
+                <form class="filter-form" method="POST">
+                    <section>
+                        <h3>Стоимость</h3>
+                        <input type="range" id="cost">
+                        <label class="visually-hidden" for ="cost">Выбрать Стоимость</label>
+                    </section>
+                    <section>
+                        <h3>Цвет</h3>
+                        <ul>
+                            <li> 
+                                <label>
+                                    <input type="checkbox">
+                                    Черный
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    Белый
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    Синий
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    Красный
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox">
+                                    Розовый
+                                </label>
+                            </li>
+                        </ul> 
+                    </section>
+                    <section>
+                        <h3>Bluetooth</h3>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="bluetooth">
+                                    Есть
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="bluetooth">
+                                    Нет
+                                </label>
+                            </li>
+                        </ul> 
+                    </section>
+                </form>
             </aside> 
             <div class="catalog">
                 <ul class="product-list">
@@ -187,41 +205,49 @@
                         <article class="product-item">
                             <img src="img/item-1.jpg" alt="товар">
                             <a href="#">Любительская селфи-палка <span>500 руб.</span></a>
+                            <button type="button">Добавить в корзину</button>
+                            <button type="button">Добавить к сравнению</button>
                         </article>
                     </li>
                     <li>    
                         <article class="product-item">
                             <img src="img/item-2.jpg" alt="товар">
                             <a href="#">Профессиональная селфи-палка  <span>1500 руб.</span></a>
+                            <button type="button">Добавить в корзину</button>
+                            <button type="button">Добавить к сравнению</button>
                         </article>
                     </li>
                     <li>    
                         <article class="product-item">
                             <img src="img/item-3.jpg" alt="товар">
                             <a href="#">Непотопляемая селфи-палка <span>2500 руб.</span></a>
+                            <button type="button">Добавить в корзину</button>
+                            <button type="button">Добавить к сравнению</button>
                         </article>
                     </li>
                     <li>    
                         <article class="product-item">
                             <img src="img/item-4.jpg" alt="товар">
                             <a href="#">Селфи-палка «Следуй за мной» <span>4900 руб.</span></a>
+                            <button type="button">Добавить в корзину</button>
+                            <button type="button">Добавить к сравнению</button>
                         </article>
                     </li>
                 </ul>
                 <div class="pagination">
-                    <button>Назад</button>
+                    <button type="button">Назад</button>
                     <ul>
                         <li>
-                            <button>1</button> 
+                            <button type="button">1</button> 
                         </li>
                         <li>
-                            <button>2</button> 
+                            <button type="button">2</button> 
                         </li>
                         <li>
-                            <button>3</button> 
+                            <button type="button">3</button> 
                         </li>
                     </ul>
-                    <button>Вперед</button>
+                    <button type="button">Вперед</button>
                 </div>
             </div>
         </section>
@@ -230,7 +256,7 @@
      <!-- Подвал -->
      <footer class="page-footer">
         <section>
-            <a href="#" class="logo logo-footer">
+            <a href="index.html" class="logo logo-footer">
                 <svg class="icon_logo"  title="Логотип" width="163px" height="35px">
                     <use xlink:href="#logo"/>
                 </svg>     
