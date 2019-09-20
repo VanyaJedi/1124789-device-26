@@ -1,9 +1,43 @@
-html,
-body {
+/* Импортируем шрифты*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic');
+
+@font-face { 
+    font-family: 'Gilroy'; 
+    src:
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+  @font-face { 
+    font-family: 'Gilroy light'; 
+    src:
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: normal; 
+    font-style: normal; 
+  }
+*, 
+::after, 
+::before{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+ul{
+    list-style: none;
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,4 +47,277 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.bold{
+    font-family: 'Gilroy', sans-serif;
+    font-size:18px;
+    line-height: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.extrabold{
+    font-family: 'Gilroy', sans-serif;
+    font-size:47px;
+    line-height: 56px;
+}
+
+.icon{
+    margin-right:7px;
+}
+
+/* --------- СТИЛИ ШАПКИ --------- */
+.page-header{
+    position:relative;
+    width: 1160px;
+    margin:0 auto;
+    padding-top:22px;
+    padding-left:60px;
+    padding-right:60px;
+}
+
+.low-header{
+    display:flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+
+.decoration{
+    top:40px;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:299px;
+    background-color: #f7e296;
+    z-index: -1; 
+}
+
+.form-search{
+    display:flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.form-search button{
+    background-color: transparent;
+    border: none;
+}
+.form-search input{
+    background-color: transparent;
+    border: none;
+    margin-left:10px;
+}
+
+.form-search input::placeholder{
+    opacity:0.3;
+}
+
+.nav-wrapper{
+    width:560px;
+}
+
+.nav-header{
+    display:flex;
+}
+.nav-header li{
+    margin-left:45px;
+}
+.nav-header li:nth-child(1){
+    margin-right:auto;
+}
+
+.menu-list{
+    display:flex;
+    margin-top:50px;
+}
+.menu-list li{
+    margin-left:40px;
+}
+
+.menu-list li:nth-child(3){
+    margin-left:auto;
+}
+
+
+
+/* ----------- СТИЛИ ГЛАВНОЙ СТРАНИЦЫ КОНТЕНТА ----------- */
+
+.products-view{
+    width: 1040px;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:120px;
+}
+
+.slider-item{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+.slider-product-img{
+    width:50%;
+}
+.slider-item-desc{
+    width:50%;
+    padding-top:50px;
+    /*margin-top:86px;*/
+}
+
+.slider-item-param{
+    display:flex;
+    justify-content: space-between;
+    margin-top:70px;
+}
+
+.slider-item-param li{
+    font-family: 'Gilroy light', sans-serif;
+    font-size: 36px;
+    /*line-height: 48px;*/
+}
+.slider-item-param span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.product-category-list{
+    width:1160px;
+    margin:0 auto;
+    margin-bottom:158px;
+}
+.category-items{
+    display:flex;
+    justify-content: space-between;
+}
+.category-image{
+    width:160px;
+    height:160px;
+    background-color: #f7e296;
+    padding-top:40px;
+}
+.category-image svg{
+    display:block;
+    margin: 0 auto;
+} 
+.category-item a{
+    display:block;
+}
+.category-item-desc{
+    width:160px;
+    margin-top:40px;
+    font-family: 'Gilroy', sans-serif;
+    font-size:18px;
+    line-height: 24px;
+
+}
+
+.delivery-info{
+    display:flex;
+    width:1160px;
+    margin:0 auto;
+    margin-bottom:136px;
+}
+
+.nav-delivery{
+    width:285px;
+}
+.nav-delivery li{
+    margin-bottom:35px;
+}
+.delivery-items{
+    margin-left:116px;
+    width:425px;
+}
+.delivery-item p{
+    margin-top:37px;
+}
+
+.company-list {
+    font-family: 'Gilroy', sans-serif;
+    font-size:16px;
+    line-height: 40px;
+}
+
+.product-brand{
+    width:1160px;
+    margin:0 auto;
+    margin-bottom:93px;
+}
+.product-brand ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+.company-info{
+    width:1160px;
+    margin:0 auto;
+    display:flex;
+}
+/* ----------- СТИЛИ  СТРАНИЦЫ КАТАЛОГ ----------- */ 
+
+
+
+
+/* --------- СТИЛИ ПОДВАЛА --------- */
+.page-footer{
+    padding-top:62px;
+    background-color: #464646;
+    color: #ffffff;
+}
+.footer-center{
+   padding: 0 60px;
+   padding-bottom:60px;
+}
+.page-footer a{
+    color: #ffffff; 
+}
+
+.top-footer{
+    display:flex;
+    margin-bottom:35px;
+}
+.middle-footer{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:75px;
+}
+.bottom-footer{
+    display:flex;
+    width:50%;
+    margin-left:auto;
+    justify-content: space-between;
+}
+
+.delivery-footer-list{
+    display:flex;
+}
+.delivery-footer-list li{
+    margin-left: 39px;
+}
+.social-list{
+    display:flex;
+}
+.social-list li{
+    margin-left: 23px;
+}
+.nav-footer{
+    display:flex;
+    margin-left:auto;
+}
+.nav-footer li{
+    margin-left:45px;
+}
+.logo-footer{
+    fill:#ffc600;
+}
+
+
+.nav-footer svg, .icon-academy{
+    fill:#ffc600;
+}
+
+
+
+.icon-social{
+    opacity:0.3;
 }
