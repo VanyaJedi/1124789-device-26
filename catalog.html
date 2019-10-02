@@ -246,17 +246,17 @@
     </div>
 
      <!-- Шапка -->
-    <header class="page-header catalog-header">
+     <header class="page-header">
         <div class="container">
             <section class="top-header">
                 <a href="index.html" class="logo logo-header">
                     <svg class="icon-logo logo-header"  title="Логотип" width="163px" height="35px">
-                        <use xlink:href="#logo"/>
+                        <use xlink:href="#logo"></use>
                     </svg>     
                 </a>  
             </section>
             <section class="low-header">
-                <div>
+                <div class="header-form-link">
                     <form class="form-search">
                         <svg class="icon"  title="Поиск" width="16px" height="16px">
                             <use xlink:href="#search"></use>
@@ -265,8 +265,22 @@
                         <button class="button-search">Найти</button>
                     </form>
                     <a href="catalog.html" class="catalog-link bold">Каталог товаров</a> 
-                    <!-- Иконку плюсика думаю сделать в стилях -->
+                    <div class="header-catalog-links">
+                        <ul>
+                            <li>Виртуальная реальность</li>
+                            <li>Моноподы для селфи</li>
+                            <li>Экшн-камеры</li>
+                        </ul>
+                        <ul>
+                            <li>Фитнес-браслеты</li>
+                            <li>Умные часы</li>
+                        </ul>
+                        <ul>
+                            <li>Квадрокоптеры</li>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="nav-wrapper">
                     <ul class="nav-header">
                         <li>
@@ -294,6 +308,7 @@
                         <li><a href="#" class="nav-item bold">Контакты</a></li>
                     </ul>
                 </div>
+                
             </section>
         </div>
     </header>
@@ -385,8 +400,9 @@
                                 </li>
                             </ul> 
                         </section>
+                        <a href="#" class="bold details"><span>Показать</span></a>
                     </form>
-                    <a href="#" class="bold">Показать</a>
+                    
                 </aside> 
                 <div class="catalog">
                     <ul class="product-list">

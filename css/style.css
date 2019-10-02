@@ -19,7 +19,7 @@
 
 *, 
 ::after, 
-::before{
+::before {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -128,6 +128,7 @@ a {
     margin-top:-20px;
 }
 .low-header{
+    position:relative;
     display:flex;
     justify-content: space-between;
     padding: 0 60px;
@@ -192,9 +193,19 @@ a {
 .button-search:active{
     color:#6a6a6a;
 }
+.header-form-link,
+.nav-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.header-catalog-links{
+    position:relative;
+}
 .catalog-link{
     position:relative;
+    display:block;
 }
 .catalog-link::after{
     content:url(../img/plus.png);
@@ -207,6 +218,9 @@ a {
 
 .catalog-link:hover{
     opacity:0.6;
+}
+.catalog-link:hover + .header-catalog-links{
+    display:flex;
 }
 .catalog-link:active{
     opacity:0.3;
@@ -254,10 +268,37 @@ a {
     opacity:0.3;
 }
 
+.header-catalog-links{
+    display:none;
+    position:absolute;
+    height:170px;
+    margin-top:0;
+    padding:27px 60px;
+    z-index:20;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: #f7e296;
+}
+
+.header-catalog-links:hover {
+    display:flex;
+}
+
+.header-catalog-links ul{
+    min-width:84px;
+    list-style: none;
+    margin-right:56px;
+}
+.header-catalog-links ul li{
+    cursor:pointer;
+    margin-bottom:10px;
+}
 
 /* ----------- СТИЛИ ГЛАВНОЙ СТРАНИЦЫ КОНТЕНТА ----------- */
 
 .main-content{
+    display:block;
     margin-top:-120px;
 }
 
@@ -419,7 +460,12 @@ a {
 
 .delivery-info{
     position:relative;
-    width:100%;
+    width:100%; 
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 26%, #e5e5e5 26%, #e5e5e5 26%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 26%,#e5e5e5 26%,#e5e5e5 26%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 26%,#e5e5e5 26%,#e5e5e5 26%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
 
 .delivery-container{
@@ -429,11 +475,7 @@ a {
     margin-bottom:136px; 
     padding-bottom:70px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+26,e5e5e5+26,e5e5e5+26,e5e5e5+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 26%, #e5e5e5 26%, #e5e5e5 26%, #e5e5e5 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 26%,#e5e5e5 26%,#e5e5e5 26%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 26%,#e5e5e5 26%,#e5e5e5 26%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+   
 
 }
 
@@ -568,6 +610,7 @@ a {
     display:flex;
     flex-direction: column;
     padding-top:48px;
+    width:50%;
 }
 .about{
     padding-top:47px;
@@ -629,6 +672,14 @@ a {
 
 
 /* ----------- СТИЛИ  СТРАНИЦЫ КАТАЛОГ ----------- */ 
+
+.catalog-main{
+    position:relative;
+    display:block;
+    margin-top:-120px;
+     background-color: #ffffff;
+}
+
 .catalog-top{
     padding: 0 60px;
     margin-bottom:50px;
@@ -672,7 +723,7 @@ a {
 }
 .catalog-filter{
     display:flex;
-    width:467px;
+    width:32.5%;
     padding:27px 0;
     padding-left:calc((100% - 1040px) / 2);
     background-color:#dbdbdb;
@@ -681,6 +732,7 @@ a {
 .catalog-sort{
     display:flex;
     padding:27px 0;
+    width:67.5%;
     padding-left:70px;
     padding-right:calc((100% - 1160px) / 2);
     flex-grow:1;
@@ -707,7 +759,7 @@ a {
 }
 
 .filter{
-    width:467px;
+    width:32.5%;
     flex-shrink: 0;
     padding-top:68px;
     padding-left:calc((100% - 1040px) / 2);
@@ -801,6 +853,7 @@ a {
 .catalog{
     padding-top:70px;
     padding-left:73px;
+    width:67.5%;
     padding-right:calc((100% - 1160px) / 2);
 }
 .catalog ul{
