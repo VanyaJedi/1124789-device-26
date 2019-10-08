@@ -268,20 +268,20 @@
                         <button class="button-search">Найти</button>
                     </form>
                     <a href="catalog.html" class="catalog-link bold">Каталог товаров</a> 
-                    <div class="header-catalog-links">
-                        <ul>
-                            <li><a href="">Виртуальная реальность</a></li>
-                            <li><a href="">Моноподы для селфи</a></li>
-                            <li><a href="">Экшн-камеры</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">Фитнес-браслеты</a></li>
-                            <li><a href="">Умные часы</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="">Квадрокоптеры</a></li>
-                        </ul>
-                    </div>
+                    <ul class="header-catalog-links">
+                        <li>
+                            <a href="">Виртуальная реальность</a>
+                            <a href="">Моноподы для селфи</a>
+                            <a href="">Экшн-камеры</a>
+                        </li>
+                        <li>
+                            <a href="">Фитнес-браслеты</a>
+                            <a href="">Умные часы</a>
+                        </li>
+                        <li>
+                            <a href="">Квадрокоптеры</a>
+                        </li>
+                    </ul>
                 </div>
               
                 <div class="nav-wrapper">
@@ -442,7 +442,7 @@
         <section class="delivery-info">
             <div class="delivery-container">
                     <ul class="nav-delivery">
-                        <li class="nav-delivery-item"><a href="#" class="delivery-link bold"><span>Доставка</span></a></li>
+                        <li class="nav-delivery-item nav-delivery-item-active"><a href="#" class="delivery-link bold"><span>Доставка</span></a></li>
                         <li class="nav-delivery-item"><a href="#" class="delivery-link bold"><span>Гарантия</span></a></li>
                         <li class="nav-delivery-item"><a href="#" class="delivery-link bold"><span>Кредит</span></a></li>
                     </ul>
@@ -494,9 +494,9 @@
                 <div class="company-info-item">
                     <h2 class="extrabold">Контакты</h2>	
                     <p class="about about-c">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <!-- <iframe></iframe> Делаю пока картинкой -->
-                    <img class="map" src="img/map.jpg" alt="Карта">
-                    <a href="#" class="bold company-details">Напишите нам</a>
+                   <!-- <iframe class="mini-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931573549!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570469252415!5m2!1sen!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+                    <img class="map mini-map" src="img/map.jpg" alt="Карта">
+                    <a href="#" class="bold company-details text-us-btn">Напишите нам</a>
                 </div>
             </section>
         </div>
@@ -572,6 +572,38 @@
                 </a>
             </section>
         </div>
-    </footer>
+    </footer> 
+    <section class="popup-letter">
+        <h3 class="visually-hidden"> Форма, напишите нам</h3>
+        <form class="popup-letter-form">
+            <ul class="popup-letter-list">
+                <li>
+                    <label class="popup-label" for="yourname">Ваше имя:</label>
+                    <input class="popup-input popup-input-name" type="text" id="yourname" placeholder="Имя Фамилия">
+                </li>
+                <li>
+                    <label class="popup-label" for="youremail">Ваше e-mail:</label>
+                    <input class="popup-input popup-input-email" type="text" id="youremail" placeholder="email@example.com"> 
+                </li>
+                <li>
+                    <label class="popup-label" for="yourletter">Текст письма:</label>
+                    <input class="popup-input popup-input-letter" type="text" id="yourletter" placeholder="В свободной форме">
+                </li>
+            </ul>
+            <button class="details bold send-letter"><span>Отправить</span></button>
+        </form>
+        <button type="button" class="popup-close-btn popup-close-btn-letter" aria-label="Закрыть">
+            <span></span>
+            <span></span>
+        </button>
+    </section>
+    <section class="popup-map">
+            <iframe class="popup-big-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931573549!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570469252415!5m2!1sen!2sru" width="560" height="222" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <button type="button" class="popup-close-btn popup-close-btn-map" aria-label="Закрыть">
+                <span></span>
+                <span></span>
+            </button>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
