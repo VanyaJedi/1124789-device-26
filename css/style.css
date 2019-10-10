@@ -36,9 +36,6 @@ a {
     text-decoration: none;
 }
 
-/*ul{
-    list-style: none;
-}*/
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -215,11 +212,15 @@ a {
     margin-left:11px;
 }
 
+.header-container-links{
+    position:static;
+    width:256px;
+}
+.header-container-links:hover  .header-catalog-links{
+    display:flex;
+}
 .catalog-link:hover{
     opacity:0.6;
-}
-.catalog-link:hover + .header-catalog-links{
-    display:flex;
 }
 .catalog-link:active{
     opacity:0.3;
@@ -621,11 +622,23 @@ a {
     padding-bottom:90px;
 }
 .company-info-item{
+    position:relative;
     display:flex;
     flex-direction: column;
     padding-top:48px;
     width:50%;
 }
+.company-info-item::before{
+    content:'';
+    position:absolute;
+    height:7px;
+    width:80px;
+    background-color: #000000;
+    top:0;
+    left:0;
+}
+
+
 .about{
     padding-top:47px;
     margin-bottom:43px;
@@ -639,6 +652,20 @@ a {
 .company-list{
     list-style: none;
     margin-left:33px;
+}
+.company-list li{
+    position:relative;
+}
+.company-list li::before{
+    content:'';
+    position:absolute;
+    width:9px;
+    height:9px;
+    border: 1px solid #e6e6e6;
+    border-radius:50%;
+    left:-25px;
+    top:50%;
+    transform:translateY(-50%);
 }
 .company-list a{
     color: #000000;
@@ -845,6 +872,43 @@ a {
     padding-top:17px;
     margin-bottom:39px;
 }
+
+.show-button{
+    position:relative;
+    display:inline-block;
+    width:100%;
+    padding: 8px 0;
+    text-align:center;
+}
+.show-button span{
+    position:relative;
+    z-index:20;
+}
+.show-button:hover::before{
+    top:0;
+    margin-top:0;
+    min-height:100%;
+}
+.show-button:active span{
+    opacity: 0.3;
+}
+.show-button::before{
+    content:"";
+    position: absolute;
+    left:0;
+    z-index:10;
+    top:50%;
+    margin-top:-4px;
+    width:100%;
+    min-height:8px;
+    background-color: #f0c52e;
+    transition: all ease 0.5s;
+}
+
+
+
+
+
 
 .pagination{
     display:flex;
@@ -1169,6 +1233,10 @@ a {
     background-color:#f2f2f2;
     border:none;
     border: 3px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
 }
 .popup-input:focus{
     background-color:#ffffff;
@@ -1177,6 +1245,7 @@ a {
 }
 .popup-input-letter{
     height:155px;
+    resize:none;
 }
 .popup-close-btn{
     position:absolute;
