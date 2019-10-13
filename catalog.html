@@ -355,8 +355,21 @@
                     <form class="filter-form" method="POST">
                         <section class="filter-cost">
                             <h3>Стоимость</h3>
-                            <input type="range" id="cost">
-                            <label class="visually-hidden" for="cost">Выбрать Стоимость</label>
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                                    <label class="max-price">до <input name="max-price" type="number" value="5000"></label>
+                                </div>
+                            </div>
+                            <!--<input type="range" id="cost">
+                            <label class="visually-hidden" for="cost">Выбрать Стоимость</label>-->
                         </section>
                         <section class="filter-color">
                             <h3>Цвет</h3>
