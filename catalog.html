@@ -246,11 +246,11 @@
     </div>
 
      <!-- Шапка -->
-     <header class="page-header">
+    <header class="page-header">
         <div class="container">
             <section class="top-header">
                 <a href="index.html" class="logo logo-header">
-                    <svg class="icon-logo logo-header"  title="Логотип" width="163px" height="35px">
+                    <svg class="icon-logo"  title="Логотип" width="163px" height="35px">
                         <use xlink:href="#logo"></use>
                     </svg>     
                 </a>  
@@ -282,24 +282,24 @@
                         </ul>
                     </div>
                 </div>
-                
+              
                 <div class="nav-wrapper">
                     <ul class="nav-header">
                         <li>
-                            <svg class="icon"  title="Юзер" width="13px" height="12px">
-                                <use xlink:href="#user"/>
+                            <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                                <use xlink:href="#user"></use>
                             </svg> 
                             <a href="#">Войти</a>
                         </li>
                         <li>
                             <svg class="icon"  title="Сравнить" width="10px" height="10px">
-                                <use xlink:href="#compare"/>
+                                <use xlink:href="#compare"></use>
                             </svg> 
                             <a href="#">Сравнить</a>
                         </li>
                         <li>
                             <svg class="icon"  title="Корзина" width="12px" height="12px">
-                                <use xlink:href="#cart"/>
+                                <use xlink:href="#cart"></use>
                             </svg>
                             <a href="#">Корзина</a>
                         </li>
@@ -326,9 +326,9 @@
         </div>
         <section class="catalog-filter-section" >
             <div class="container catalog-sort-filter">
-                <div class="catalog-filter"><h3>Фильтр:</h3></div>
+                <div class="catalog-filter"><h3 class="bold">Фильтр:</h3></div>
                 <div class="catalog-sort">
-                    <h3>Сортировка:</h3>
+                    <h3 class="bold">Сортировка:</h3>
                     <ul class="sort-set">
                         <li><a href="#">По цене</a></li>
                         <li><a href="#">По типу</a></li>    
@@ -373,7 +373,7 @@
                         </section>
                         <section class="filter-color">
                             <h3>Цвет</h3>
-                            <ul>
+                            <ul class="filter-color-list">
                                 <li> 
                                     <input class="visually-hidden filter-check" type="checkbox" id="color-black">
                                     <label class="filter-label" for="color-black">Черный</label>
@@ -400,7 +400,7 @@
                         </section>
                         <section class="filter-bluetooth">
                             <h3>Bluetooth</h3>
-                            <ul>
+                            <ul class="filter-bluetooth-list">
                                 <li>  
                                     <input class="visually-hidden filter-radio" id="radio-blue-yes" type="radio" name="bluetooth">
                                     <label class="filter-radio-label" for="radio-blue-yes">Есть</label>
@@ -501,30 +501,30 @@
         </section>
     </main>
      <!-- Подвал -->
-     <footer class="page-footer">
+    <footer class="page-footer">
         <div class="container">
             <section class="top-footer">
                 <a href="index.html" class="logo logo-footer">
                     <svg class="icon-logo logo-footer"  title="Логотип" width="163px" height="35px">
-                        <use xlink:href="#logo"/>
+                        <use xlink:href="#logo"></use>
                     </svg>     
                 </a>  
                 <ul class="nav-footer">
                     <li>
-                        <svg class="icon"  title="Юзер" width="13px" height="12px">
-                            <use xlink:href="#user"/>
+                        <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                            <use xlink:href="#user"></use>
                         </svg> 
                         <a href="#">Войти</a>
                     </li>
                     <li>
                         <svg class="icon"  title="Сравнить" width="10px" height="10px">
-                            <use xlink:href="#compare"/>
+                            <use xlink:href="#compare"></use>
                         </svg> 
                         <a href="#">Сравнить</a>
                     </li>
                     <li>
                         <svg class="icon"  title="Корзина" width="12px" height="12px">
-                            <use xlink:href="#cart"/>
+                            <use xlink:href="#cart"></use>
                         </svg>
                         <a href="#">Корзина</a>
                     </li>
@@ -539,33 +539,35 @@
                 </ul>
                 <p>Тел.: +7 (495) 495-95-95</p>
             </section>
-            <section class="bottom-footer"> 
-                <ul class="social-list">
-                    <li>
-                        <a href="#"> 
-                            <svg class="icon-social"  title="Фейсбук" width="32px" height="32px">
-                                <use xlink:href="#fb"/>
-                            </svg> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <svg class="icon-social"  title="Инстаграмм" width="32px" height="32px">
-                                <use xlink:href="#inst"/>
-                            </svg> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                        <svg class="icon-social"  title="Твиттер" width="32px" height="32px">
-                            <use xlink:href="#tw"/>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#">
+            <section class="bottom-footer">
+                <div class="social-icons-list">
+                    <ul class="social-list">
+                        <li>
+                            <a href="#"> 
+                                <svg class="icon-social"  title="Фейсбук" width="32px" height="32px">
+                                    <use xlink:href="#fb"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon-social"  title="Инстаграмм" width="32px" height="32px">
+                                    <use xlink:href="#inst"></use>
+                                </svg> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <svg class="icon-social"  title="Твиттер" width="32px" height="32px">
+                                <use xlink:href="#tw"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="logo-block" href="#">
                     <svg class="icon-academy"  title="Html_academy" width="27px" height="35px">
-                        <use xlink:href="#logo_html"/>
+                        <use xlink:href="#logo_html"></use>
                     </svg>
                 </a>
             </section>
