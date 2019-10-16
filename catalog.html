@@ -286,10 +286,23 @@
                 <div class="nav-wrapper">
                     <ul class="nav-header">
                         <li>
-                            <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
-                                <use xlink:href="#user"></use>
-                            </svg> 
-                            <a href="#">Войти</a>
+                            <ul class="nav-login stat-logout">
+                                <li>
+                                    <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                                        <use xlink:href="#user"></use>
+                                    </svg> 
+                                    <a href="#">Войти</a>
+                                </li>
+                                <li>
+                                    <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                                        <use xlink:href="#user"></use>
+                                    </svg> 
+                                    <a href="#">Валентин Петухов</a>
+                                </li>
+                                <li class="logout-link">
+                                    <a href="">Выйти</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <svg class="icon"  title="Сравнить" width="10px" height="10px">
@@ -297,7 +310,7 @@
                             </svg> 
                             <a href="#">Сравнить</a>
                         </li>
-                        <li>
+                        <li class="nav-last-link">
                             <svg class="icon"  title="Корзина" width="12px" height="12px">
                                 <use xlink:href="#cart"></use>
                             </svg>
@@ -335,15 +348,15 @@
                         <li><a href="#">По популярности</a></li>    
                     </ul>
                     <div class="sort-type">
-                        <button type="button">
-                            <svg class="icon"  title="Сортировка вниз" width="11px" height="10px">
-                                <use xlink:href="#down"></use>
-                            </svg>    
-                        </button>
-                        <button type="button">
-                            <svg class="icon"  title="Сортировка вверх" width="11px" height="10px">
+                        <button class="button-up" type="button">
+                            <svg class="icon-sort-type"  title="Сортировка вверх" width="11px" height="10px">
                                 <use xlink:href="#up"></use>
                             </svg>
+                        </button>
+                        <button class="button-down" type="button">
+                            <svg class="icon-sort-type"  title="Сортировка вниз" width="11px" height="10px">
+                                <use xlink:href="#down"></use>
+                            </svg>    
                         </button>
                     </div>
                 </div>
@@ -481,7 +494,7 @@
                     </ul>
                     <ul class="pagination">
                         <li>
-                            <button class="bold" type="button">Назад</button>
+                            <button class="bold button-next-prev" type="button">Назад</button>
                         </li>
                         <li>
                             <button class="bold" type="button">1</button> 
@@ -493,7 +506,7 @@
                             <button class="bold" type="button">3</button> 
                         </li>
                         <li>
-                            <button class="bold" type="button">Вперед</button>
+                            <button class="bold button-next-prev" type="button">Вперед</button>
                         </li>
                     </ul>
                 </div>
@@ -511,11 +524,23 @@
                 </a>  
                 <ul class="nav-footer">
                     <li>
-                        <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
-                            <use xlink:href="#user"></use>
-                        </svg> 
-                        <a href="#">Войти</a>
-                    </li>
+                        <ul class="nav-login stat-logout">
+                            <li>
+                                <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                                    <use xlink:href="#user"></use>
+                                </svg> 
+                                <a href="#">Войти</a>
+                            </li>
+                            <li>
+                                <svg class="icon icon-first"  title="Юзер" width="13px" height="12px">
+                                    <use xlink:href="#user"></use>
+                                </svg> 
+                                <a href="#">Валентин Петухов</a>
+                            </li>
+                            <li class="logout-link">
+                                <a href="">Выйти</a>
+                            </li>
+                        </ul>
                     <li>
                         <svg class="icon"  title="Сравнить" width="10px" height="10px">
                             <use xlink:href="#compare"></use>
