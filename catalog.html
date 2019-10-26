@@ -389,7 +389,7 @@
                             <h3>Цвет</h3>
                             <ul class="filter-color-list">
                                 <li> 
-                                    <input class="visually-hidden filter-check" type="checkbox" id="color-black">
+                                    <input class="visually-hidden filter-check" type="checkbox" id="color-black" checked>
                                     <label class="filter-label" for="color-black">Черный</label>
                                 </li>
                                 <li>
@@ -397,12 +397,12 @@
                                     <label class="filter-label" for="color-white" >Белый</label>
                                 </li>
                                 <li>
-                                    <input class="visually-hidden filter-check" type="checkbox" id="color-blue">
+                                    <input class="visually-hidden filter-check" type="checkbox" id="color-blue" checked>
                                     <label class="filter-label" for="color-blue">Синий</label> 
                                 </li>
                                 <li>
                                     
-                                    <input class="visually-hidden filter-check" type="checkbox" id="color-red">
+                                    <input class="visually-hidden filter-check" type="checkbox" id="color-red" checked>
                                     <label class="filter-label" for="color-red">Красный</label>   
                                     
                                 </li>
@@ -416,7 +416,7 @@
                             <h3>Bluetooth</h3>
                             <ul class="filter-bluetooth-list">
                                 <li>  
-                                    <input class="visually-hidden filter-radio" id="radio-blue-yes" type="radio" name="bluetooth">
+                                    <input class="visually-hidden filter-radio" id="radio-blue-yes" type="radio" name="bluetooth" checked>
                                     <label class="filter-radio-label" for="radio-blue-yes">Есть</label>
                                 </li>
                                 <li>
@@ -434,7 +434,7 @@
                         <li>
                             <article class="product-item">
                                 <div class="catalog-image-button">
-                                    <img class="catalog-product-img" src="img/item-1.jpg" alt="товар">
+                                    <img class="catalog-product-img" src="img/item-1.jpg" width="360" height="380" alt="товар любительская селфи палка">
                                     <div class="add-cart">
                                         <a href="#" class="add-cart-link bold"><span>В корзину</span></a>
                                         <a href="#" class="add-compare">Добавить к сравнению</a>
@@ -450,7 +450,7 @@
                         <li>    
                             <article class="product-item">
                                 <div class="catalog-image-button">
-                                    <img class="catalog-product-img" src="img/item-2.jpg" alt="товар">
+                                    <img class="catalog-product-img" src="img/item-2.jpg" width="360" height="380" alt="товар профессиональная селфи-палка">
                                     <div class="add-cart">
                                         <a href="#" class="add-cart-link bold"><span>В корзину</span></a>
                                         <a href="#" class="add-compare">Добавить к сравнению</a>
@@ -465,7 +465,7 @@
                         <li>    
                             <article class="product-item">
                                     <div class="catalog-image-button">
-                                        <img class="catalog-product-img" src="img/item-3.jpg" alt="товар">
+                                        <img class="catalog-product-img" src="img/item-3.jpg" width="360" height="380" alt="товар непотопляемая селфи-палка">
                                         <div class="add-cart">
                                             <a href="#" class="add-cart-link bold"><span>В корзину</span></a>
                                             <a href="#" class="add-compare">Добавить к сравнению</a>
@@ -480,7 +480,7 @@
                         <li>    
                             <article class="product-item">
                                     <div class="catalog-image-button">
-                                        <img class="catalog-product-img" src="img/item-4.jpg" alt="товар">
+                                        <img class="catalog-product-img" src="img/item-4.jpg" width="360" height="380" alt="товар селфи-палка следуй за мной">
                                         <div class="add-cart">
                                             <a href="#" class="add-cart-link bold"><span>В корзину</span></a>
                                             <a href="#" class="add-compare">Добавить к сравнению</a>
@@ -495,19 +495,15 @@
                     </ul>
                     <ul class="pagination">
                         <li>
-                            <button class="bold button-next-prev" type="button">Назад</button>
+                            <button class="bold button-next-prev button-prev" type="button">Назад</button>
                         </li>
-                        <li>
+                        <li class="pagination-num">
                             <button class="bold" type="button">1</button> 
-                        </li>
-                        <li>
-                            <button class="bold" type="button">2</button> 
-                        </li>
-                        <li>
+                            <button class="bold" type="button">2</button>
                             <button class="bold" type="button">3</button> 
                         </li>
                         <li>
-                            <button class="bold button-next-prev" type="button">Вперед</button>
+                            <button class="bold button-next-prev button-next" type="button">Вперед</button>
                         </li>
                     </ul>
                 </div>
