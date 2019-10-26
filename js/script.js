@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     mini_map.addEventListener('click', function(event){
-        console.log("привет");
         event.preventDefault();
         popup_map.classList.add('popup-map-active');
     });
