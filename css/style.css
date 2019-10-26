@@ -677,7 +677,7 @@ a {
 
 .category-image svg {
 	display: block;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 }
 
 .category-item a {
