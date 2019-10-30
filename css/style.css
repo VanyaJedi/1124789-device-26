@@ -108,10 +108,6 @@ a {
 
 /* --------- СТИЛИ ШАПКИ --------- */
 
-.page-header {
-	/*padding-top:40px;*/
-}
-
 .page-header a {
 	color: #000000;
 }
@@ -453,11 +449,6 @@ a {
 	padding: 0 60px;
 }
 
-
-/*.slider{
-   
-}*/
-
 .controls {
 	position: absolute;
 	right: 63px;
@@ -629,11 +620,6 @@ a {
 	/*justify-content: space-between;*/
 }
 
-
-/*.category-item:not(:first-child){
-		margin-left:40px;
-}*/
-
 .category-item {
 	margin-right: 40px;
 	margin-bottom: 15px;
@@ -656,7 +642,6 @@ a {
 	width: 160px;
 	height: 160px;
 	background-color: #f7e296;
-	/*padding-top:40px;*/
 	-webkit-transition: background-color ease 0.3s;
 	-o-transition: background-color ease 0.3s;
 	transition: background-color ease 0.3s;
@@ -678,7 +663,6 @@ a {
 
 .category-image svg {
 	display: block;
-	/*margin: 0 auto;*/
 }
 
 .category-item a {
@@ -855,7 +839,6 @@ a {
 }
 
 .product-brand {
-	/*margin-top:-45px;*/
 	margin-bottom: 86px;
 }
 
@@ -867,7 +850,6 @@ a {
 	list-style: none;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
-	/*justify-content: space-between;*/
 }
 
 .product-brand-list li {
@@ -987,13 +969,6 @@ a {
 	margin-top: auto;
 	text-align: center;
 }
-
-
-/*.company-details span{
-    position:relative;
-    z-index:20;
-    text-align:center;
-}*/
 
 .company-details:hover::before {
 	top: 0;
@@ -1155,11 +1130,6 @@ a {
 	border: none;
 	background: transparent;
 }
-
-
-/*.button-up {
-	margin-right: 14px;
-}*/
 
 .filter {
 	width: 329px;
@@ -1427,12 +1397,6 @@ a {
 	margin-top: -12px;
 }
 
-
-/*.pagination li {
-	cursor: pointer;
-	margin-left: 30px;
-}*/
-
 .pagination-num {
 	min-width: 92px;
 	display: flex;
@@ -1640,15 +1604,6 @@ a {
 	-o-transition: all ease 0.5s;
 	transition: all ease 0.5s;
 }
-
-
-/*.add-compare{
-    display:none;
-    position:absolute;
-    top:231px;
-    left:50%;
-    transform:translateX(-50%);
-}*/
 
 .add-compare {
 	color: #000000;

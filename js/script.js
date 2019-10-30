@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
         popup_letter.classList.add('popup-letter-active');
         popup_input_name.focus();
     });
+    
     close_letter_btn.addEventListener('click',function(event){
         event.preventDefault();
         popup_letter.classList.remove('popup-letter-active');
